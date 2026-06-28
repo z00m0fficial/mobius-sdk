@@ -1,0 +1,15 @@
+repository: mobius-sdk
+version: 0.1.0
+status: alpha
+layer: developer-platform
+department: SDK
+service: Shared Integration Helpers
+mission: Reduce duplicated integration logic across Mobius services.
+capabilities:
+  - event-helpers
+  - pulse-helpers
+  - memory-helpers
+  - repository-dna-helpers
+quality_gates:
+  duplicated_client_logic_reduced: true
+  shared_helpers_documented: true
