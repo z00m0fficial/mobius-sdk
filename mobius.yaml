@@ -1,0 +1,37 @@
+mobius:
+  repository: mobius-sdk
+  product: Mobius Developer Platform
+  capability: Shared SDK
+  department: SDK
+  owner: Mobius Technologies
+  mission: Centralize common integration helpers for Mobius services.
+  maturity: implemented
+  consumes:
+    - shared-contracts
+  produces:
+    - event-helpers
+    - pulse-helpers
+    - memory-helpers
+    - repository-dna-helpers
+  schemas:
+    - SdkEvent
+    - PulseMetricInput
+    - MemoryEventInput
+    - RepositoryDnaSummary
+  events: []
+  dependencies:
+    - mobius-schema
+  dependents:
+    - mobius-api
+    - mobius-event-bus
+    - mobius-provider-engine
+    - mobius-memory
+    - mobius-pulse
+  pulse_metrics:
+    - sdk-adoption
+  memory_events:
+    - sdk-helper-created
+  architecture_version: Enterprise Alpha v0.1
+  genesis_version: Genesis v1.0
+  canon_version: Canon v1.0
+  sync_status: synchronized
